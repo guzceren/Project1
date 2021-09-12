@@ -1,0 +1,10 @@
+l=[[1, 2], [3, 4], [5, 6, 7]]
+a=l[0]
+a.reverse()
+b=l[1]
+b.reverse()
+c=l[2]
+c.reverse()
+l=[a,b,c]
+l.reverse()
+print(l)
