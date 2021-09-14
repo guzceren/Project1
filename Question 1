@@ -1,3 +1,5 @@
+
+Solution 1:
 l=[[1,'a',['cat'],2],[[[3]],'dog'],4,5]
 a=l[0]
 b=a[2]
@@ -8,3 +10,14 @@ e=d[0]
 f=e[0]
 l2=[a[0],a[1],m,a[3],f,c[1],l[2],l[3]]
 print(l2)
+
+Solution 2:
+def flatten(x):
+    l = []
+    for i in x:
+        if type(i) == type([]):
+          l.extend(flatten(i))
+        else:
+          l.append(i)
+    return l
+print(flatten(input()))
